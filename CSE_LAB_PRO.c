@@ -309,7 +309,8 @@ void join(){
 
         printf("\t Enter Your Number: ");
         scanf("%d", &num);
-        fprintf(user_join, "Number: %d\n\n", num);
+        fprintf(user_join, "Number: %d\n", num);
+        fputs("===================================\n",user_join);
 
         printf("\n\n\t File is written successfully.\n\n");
         fclose(user_join);
@@ -330,7 +331,7 @@ void s_details(){
     else{
         printf("\n\n-----------------------------------------------------");
         printf("\n|");
-        printf("\t\tFile is Open");
+        printf("\t\tMembers Details");
         printf("\t\t\t    |\n");
         printf("-----------------------------------------------------\n\n");
 
