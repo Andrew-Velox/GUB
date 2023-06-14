@@ -17,7 +17,7 @@ void s_details();
 
 //-------Main Panel---------//
 int main(){
-    int user_in,n;
+    int user_in;
 
     /*---------For displaying User name in Welcome Message-----------
     char usr_nm[50];
@@ -36,7 +36,7 @@ int main(){
         printf("\t\t 2. User Panel.\n");
         printf("\t\t 3. Exit.\n");
     
-        printf("\n\t\t Enter: ");
+        printf("\n\t\t [>_<] Enter: ");
         scanf("%d",&user_in);
     
         if(user_in==1){
@@ -50,7 +50,7 @@ int main(){
             exit(0);
         }
         else{
-            printf("\t\t Wrong Input.\n\n");
+            printf("\n\t\t Wrong Input.\n\n");
         }
     }
 }
@@ -76,7 +76,7 @@ void admin(){
         printf("\t\t 2. Students Details.\n");
         printf("\t\t 3. Back.\n");
 
-        printf("\n\t\t Enter: ");
+        printf("\n\t\t [>_<] Enter: ");
         scanf("%d",&user_in);
 
         if(user_in==1){
@@ -89,7 +89,7 @@ void admin(){
             main();
         }
         else{
-            printf("\t\t Wrong Input.\n\n");
+            printf("\n\t\t Wrong Input.\n\n");
             printf("\t Enter 0 to go back: ");
             scanf("%d",&user_in);
 
@@ -104,7 +104,7 @@ void admin(){
     }
 
     else{
-        printf("\t\t Wrong Password.\n\n");
+        printf("\n\t\t Wrong Password.\n\n");
         printf("\t Enter 0 to go back: ");
         scanf("%d",&xx);
 
@@ -121,7 +121,11 @@ void admin(){
 //-------User Panel---------//
 void user(){
     int user_x,xx;
-    printf("\n<-------------Select Your Club Which you Want to Know------------->");
+    printf("\n\n----------------------------------------------------------");
+    printf("\n|");-
+    printf("\t  Select Which Club You Want To Know About");
+    printf("\t |");
+    printf("\n----------------------------------------------------------");
     printf("\n\n\t\t 1. Computer Club");
     printf("\n\t\t 2. EEE Club");
     printf("\n\t\t 3. Textile Club");
@@ -129,7 +133,7 @@ void user(){
     printf("\n\t\t 5. join Club");
     printf("\n\t\t 6. Back.");
 
-    printf("\n\n\t\t Enter: ");
+    printf("\n\n\t\t [>_<] Enter: ");
     scanf("%d",&user_x);
     switch(user_x){
         case 1:
@@ -181,7 +185,7 @@ void cse(){
     printf("\n\t Previous Program : IDPC Spring 2023.");
     printf("\n\t UpComing Program : Freshers Oreantation Fall.");
 
-    printf("\n\n\t Enter 0 to go back. ");
+    printf("\n\n\t Enter 0 to go back:  ");
     scanf("%d",&user_x);
 
     if(user_x==0){
@@ -208,7 +212,7 @@ void eee(){
     printf("\n\t Previous Program : Robotics Program ");
     printf("\n\t UpComing Program : Coming Soon.");
 
-    printf("\n\n\t Enter 0 to go back. ");
+    printf("\n\n\t Enter 0 to go back:  ");
     scanf("%d",&user_x);
 
     if(user_x==0){
@@ -235,7 +239,7 @@ void txt(){
     printf("\n\t Previous Program : 3rd Industrial Visit 2023 ");
     printf("\n\t UpComing Program : Coming Soon.");
 
-    printf("\n\n\t Enter 0 to go back. ");
+    printf("\n\n\t Enter 0 to go back:  ");
     scanf("%d",&user_x);
 
     if(user_x==0){
@@ -262,7 +266,7 @@ void cul(){
     printf("\n\t Previous Program : Curoy-vati Episod 3");
     printf("\n\t UpComing Program : Curoy-vati Episod 4");
 
-    printf("\n\n\t Enter 0 to go back. ");
+    printf("\n\n\t Enter 0 to go back:  ");
     scanf("%d",&user_x);
 
     if(user_x==0){
@@ -277,7 +281,7 @@ void cul(){
 //-------Join Section---------//
 void join(){
     char name[100],email[100];
-    int id,num;
+    int id,num,user_x;
     FILE *user_join;
 
     user_join = fopen("members.txt","a");
@@ -289,7 +293,7 @@ void join(){
     else{
         printf("\n\n-----------------------------------------------------");
         printf("\n|");
-        printf("\t\tFile is Open");
+        printf("\t\tFile is Opened");
         printf("\t\t\t    |\n");
         printf("-----------------------------------------------------");
 
@@ -312,9 +316,23 @@ void join(){
         fprintf(user_join, "Number: %d\n", num);
         fputs("===================================\n",user_join);
 
-        printf("\n\n\t File is written successfully.\n\n");
+        printf("\n\n\t Join successfully.\n\n");
         fclose(user_join);
-        exit(0);
+        
+        printf("\n\n\t 00. Back \n");
+        printf("\n\t [>_<] Enter: ");
+        scanf("%d",&user_x);
+
+        if(user_x==0 || user_x==00){
+            main();
+        }
+        /*else if(user_x==01 || user_x==1){
+            admin();
+        }*/
+        else{
+          printf("\n\n\tGOOD BYE. [>_<]\n\n");
+          exit(0);
+        }
     }
 }
 
@@ -341,7 +359,7 @@ void s_details(){
         }
         fclose(user_join);
 
-        printf("\n\n\t Enter 0 to go back. ");
+        printf("\n\n\t Enter 0 to go back:  ");
         scanf("%d",&user_x);
 
         if(user_x==0){
