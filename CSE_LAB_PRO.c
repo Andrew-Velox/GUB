@@ -324,11 +324,11 @@ void join(){
     }
 
     else{
-        printf("\n\n-----------------------------------------------------");
+        printf("\n\n----------------------------------------------------------");
         printf("\n|");
-        printf("\t\tFile is Opened");
-        printf("\t\t\t    |\n");
-        printf("-----------------------------------------------------");
+        printf("\t\t File is Opened");
+        printf("\t\t\t\t |\n");
+        printf("----------------------------------------------------------");
 
         printf("\n\n\t Enter Your Name: ");
         getchar();
@@ -349,19 +349,22 @@ void join(){
         fprintf(user_join, "Number: %d\n", num);
         fputs("===================================\n",user_join);
 
-        printf("\n\n\t Join successfully.\n\n");
+        printf("\n\n\t\t Join successfully.\n\n");
         fclose(user_join);
         
-        printf("\n\t 00. Back \n");
-        printf("\n\t [>_<] Enter: ");
+        printf("----------------------------------------------------------\n");
+        printf("|\t\t 01. Add Another Student. \t\t |\n");
+        printf("|\t\t 00. Back. \t\t\t\t |");
+        printf("\n----------------------------------------------------------");
+        printf("\n\t\t [>_<] Enter: ");
         scanf("%d",&user_x);
 
         if(user_x==0 || user_x==00){
             main();
         }
-        /*else if(user_x==01 || user_x==1){
-            admin();
-        }*/
+        else if(user_x==01 || user_x==1){
+            join();
+        }
         else{
           printf("\n\n\tGOOD BYE. [>_<]\n\n");
           exit(0);
