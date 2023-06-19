@@ -37,7 +37,7 @@ int main(){
         printf("\n|  G U B  C L U B   M A N A G E M E N T   S Y S T E M   |\n");
         printf("|-------------------------------------------------------|");
         printf("\n|");
-        printf("\t\t  W E L C O M E ");
+        printf("\t\t    W E L C O M E ");
         printf("\t\t\t|\n");
         printf("|-------------------------------------------------------|");
         printf("\n<---------------Select your option---------------------->\n");
@@ -116,8 +116,10 @@ void admin(){
 
     else{
         printf("\n\t\t Wrong Password.\n\n");
-        printf("\t 01. Try Again \n");
-        printf("\t 00. Back \n");
+        printf("----------------------------------------------------------\n");
+        printf("|\t\t 01. Try Again \t\t\t\t |\n");
+        printf("|\t\t 00. Back \t\t\t\t |");
+        printf("\n----------------------------------------------------------");
         printf("\n\t\t Enter: ");
         scanf("%d",&xx);
 
