@@ -25,13 +25,22 @@ int main(){
     gets(usr_nm);*/
 
     while (1)
-    {
-        printf("\n\n-----------------------------------------------------");
+    {   
+        printf("\n -------------------------------------------------------\t\n");
+        printf("|           _____    _____   __  __    _____   \t\t|\n");
+        printf("|          / ____|  / ____| |  \\/  |  / ____|  \t\t|\n");
+        printf("|         | |  __  | |      | \\  / | | (___    \t\t|\n");
+        printf("|         | | |_ | | |      | |\\/| |  \\___ \\   \t\t|\n");
+        printf("|         | |__| | | |____  | |  | |  ____) |  \t\t|\n");
+        printf("|          \\_____|  \\_____| |_|  |_| |_____/ \t\t| \n");
+        printf("|\t\t\t\t\t\t\t|");
+        printf("\n|  G U B  C L U B   M A N A G E M E N T   S Y S T E M   |\n");
+        printf("|-------------------------------------------------------|");
         printf("\n|");
-        printf("\t\t    WELCOME ");
-        printf("\t\t\t    |\n");
-        printf("-----------------------------------------------------");
-        printf("\n<--------------Select your option-------------------->\n\n");
+        printf("\t\t  W E L C O M E ");
+        printf("\t\t\t|\n");
+        printf("|-------------------------------------------------------|");
+        printf("\n<---------------Select your option---------------------->\n\n");
         printf("\t\t 1. Admin Panel.\n");
         printf("\t\t 2. User Panel.\n");
         printf("\t\t 3. Exit.\n");
@@ -105,10 +114,15 @@ void admin(){
 
     else{
         printf("\n\t\t Wrong Password.\n\n");
-        printf("\t Enter 0 to go back: ");
+        printf("\t 01. Try Again \n");
+        printf("\t 00. Back \n");
+        printf("\n\t\t Enter: ");
         scanf("%d",&xx);
 
         if(xx==0){
+            main();
+        }
+        else if(xx==1){
             admin();
         }
         else{
