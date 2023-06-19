@@ -40,11 +40,13 @@ int main(){
         printf("\t\t  W E L C O M E ");
         printf("\t\t\t|\n");
         printf("|-------------------------------------------------------|");
-        printf("\n<---------------Select your option---------------------->\n\n");
-        printf("\t\t 1. Admin Panel.\n");
-        printf("\t\t 2. User Panel.\n");
-        printf("\t\t 3. Exit.\n");
-    
+        printf("\n<---------------Select your option---------------------->\n");
+        printf("|\t\t\t\t\t\t\t|\n");
+        printf("|\t\t 1. ADMIN PANEL. \t\t\t|\n");
+        printf("|\t\t 2. USER PANEL. \t\t\t|\n");
+        printf("|\t\t 3. EXIT. \t\t\t\t|\n");
+        printf("|\t\t\t\t\t\t\t|\n");
+        printf("|-------------------------------------------------------|");
         printf("\n\t\t [>_<] Enter: ");
         scanf("%d",&user_in);
     
@@ -72,18 +74,18 @@ void admin(){
     printf("\n\t Enter Password to Log-in : ");
     scanf("%d",&user_in);
     if(user_in==101010){
-        printf("\n\n-----------------------------------------------------");
+        printf("\n----------------------------------------------------------");
         printf("\n|");
         printf("\t\tWELCOME TO ADMIN PANEL");
-        printf("\t\t    |\n");
-        printf("-----------------------------------------------------");
-        printf("\n<--------------Select Your Option-------------------->\n\n");
-
-
-        //add student
-        printf("\t\t 1. Add a Student.\n");
-        printf("\t\t 2. Students Details.\n");
-        printf("\t\t 3. Back.\n");
+        printf("\t\t\t |\n");
+        printf("----------------------------------------------------------");
+        printf("\n<----------------Select Your Option---------------------->");
+        printf("\n|\t\t\t\t\t\t\t |");
+        printf("\n|\t\t 1. Add a Student. \t\t\t |");
+        printf("\n|\t\t 2. Students Details.\t\t\t |");
+        printf("\n|\t\t 3. Back. \t\t\t\t |");
+        printf("\n|\t\t\t\t\t\t\t |");
+        printf("\n----------------------------------------------------------");
 
         printf("\n\t\t [>_<] Enter: ");
         scanf("%d",&user_in);
@@ -139,15 +141,18 @@ void user(){
     printf("\n|");-
     printf("\t  Select Which Club You Want To Know About");
     printf("\t |");
-    printf("\n----------------------------------------------------------");
-    printf("\n\n\t\t 1. Computer Club");
-    printf("\n\t\t 2. EEE Club");
-    printf("\n\t\t 3. Textile Club");
-    printf("\n\t\t 4. Cultural Club");
-    printf("\n\t\t 5. join Club");
-    printf("\n\t\t 6. Back.");
+    printf("\n----------------------------------------------------------\n");
+    printf("|\t\t\t\t\t\t\t |");
+    printf("\n|\t\t 1. Computer Club \t\t\t |");
+    printf("\n|\t\t 2. EEE Club \t\t\t\t |");
+    printf("\n|\t\t 3. Textile Club \t\t\t |");
+    printf("\n|\t\t 4. Cultural Club \t\t\t |");
+    printf("\n|\t\t 5. join Club \t\t\t\t |");
+    printf("\n|\t\t 6. Back. \t\t\t\t |");
+    printf("\n|\t\t\t\t\t\t\t |");
+    printf("\n----------------------------------------------------------\n");
 
-    printf("\n\n\t\t [>_<] Enter: ");
+    printf("\t\t[>_<] Enter: ");
     scanf("%d",&user_x);
     switch(user_x){
         case 1:
@@ -169,7 +174,7 @@ void user(){
             main();
             break;
         default:
-            printf("\t\t Wrong input.\n\n");
+            printf("\n\t\t Wrong input.\n\n");
             printf("\t Enter 0 to go back: ");
             scanf("%d",&xx);
 
@@ -177,7 +182,7 @@ void user(){
             user();
         }
         else{
-            printf("\n\n\tGOOD BYE. [>_<]\n\n");
+            printf("\n\n\t\tGOOD BYE. [>_<]\n\n");
             exit(0);
         }
     }
@@ -187,17 +192,20 @@ void user(){
 //-------CSE SECTION---------//
 void cse(){
     int user_x;
-    printf("\n\n-----------------------------------------------------");
+    printf("\n\n----------------------------------------------------------");
     printf("\n|");
-    printf("\t\tWELCOME COMPUTER CLUB");
-    printf("\t\t    |\n");
-    printf("-----------------------------------------------------");
-    printf("\n\n\t Club Name : Computer Clube.");
-    printf("\n\t President Name : Shamim Ahmed");
-    printf("\n\t Total Executive Member : 2 ");
-    printf("\n\t Total General Member : 20 ");
-    printf("\n\t Previous Program : IDPC Spring 2023.");
-    printf("\n\t UpComing Program : Freshers Oreantation Fall.");
+    printf("\t\tWELCOME TO COMPUTER CLUB");
+    printf("\t\t |\n");
+    printf("----------------------------------------------------------");
+    printf("\n|\t\t\t\t\t\t\t |");
+    printf("\n|\t Club Name : Computer Clube.\t\t\t |");
+    printf("\n|\t President Name : Shamim Ahmed\t\t\t |");
+    printf("\n|\t Total Executive Member : 2 \t\t\t |");
+    printf("\n|\t Total General Member : 20 \t\t\t |");
+    printf("\n|\t Previous Program : IDPC Spring 2023. \t\t |");
+    printf("\n|\t UpComing Program : Freshers Oreantation Fall.\t |");
+    printf("\n|\t\t\t\t\t\t\t |");
+    printf("\n----------------------------------------------------------");
 
     printf("\n\n\t Enter 0 to go back:  ");
     scanf("%d",&user_x);
@@ -214,17 +222,20 @@ void cse(){
 //-------EEE SECTION---------//
 void eee(){
     int user_x;
-    printf("\n\n-----------------------------------------------------");
+    printf("\n\n----------------------------------------------------------");
     printf("\n|");
-    printf("\t\tWELCOME EEE CLUB");
-    printf("\t\t    |\n");
-    printf("-----------------------------------------------------");
-    printf("\n\n\t Club Name : EEE Clube.");
-    printf("\n\t President Name : Sajib Biswas Antu");
-    printf("\n\t Total Executive Member : 3 ");
-    printf("\n\t Total General Member : 20 ");
-    printf("\n\t Previous Program : Robotics Program ");
-    printf("\n\t UpComing Program : Coming Soon.");
+    printf("\t\tWELCOME TO EEE CLUB");
+    printf("\t\t\t |\n");
+    printf("----------------------------------------------------------");
+    printf("\n|\t\t\t\t\t\t\t |");
+    printf("\n|\t Club Name : EEE Clube. \t\t\t |");
+    printf("\n|\t President Name : Sajib Biswas Antu\t\t |");
+    printf("\n|\t Total Executive Member : 3 \t\t\t |");
+    printf("\n|\t Total General Member : 20 \t\t\t |");
+    printf("\n|\t Previous Program : Robotics Program. \t\t |");
+    printf("\n|\t UpComing Program : Coming Soon.\t\t |");
+    printf("\n|\t\t\t\t\t\t\t |");
+    printf("\n----------------------------------------------------------");
 
     printf("\n\n\t Enter 0 to go back:  ");
     scanf("%d",&user_x);
@@ -241,17 +252,20 @@ void eee(){
 //-------TEX SECTION---------//
 void txt(){
     int user_x;
-    printf("\n\n-----------------------------------------------------");
+    printf("\n\n----------------------------------------------------------");
     printf("\n|");
-    printf("\t\tWELCOME TEXTILE CLUB");
-    printf("\t\t    |\n");
-    printf("-----------------------------------------------------");
-    printf("\n\n\t Club Name : Textile Clube.");
-    printf("\n\t President Name : MD Tanvir Hasan Molla");
-    printf("\n\t Total Executive Member : 7 ");
-    printf("\n\t Total General Member : 23 ");
-    printf("\n\t Previous Program : 3rd Industrial Visit 2023 ");
-    printf("\n\t UpComing Program : Coming Soon.");
+    printf("\t\tWELCOME TO TEXTILE CLUB");
+    printf("\t\t\t |\n");
+    printf("----------------------------------------------------------");
+    printf("\n|\t\t\t\t\t\t\t |");
+    printf("\n|\t Club Name : Textile Clube. \t\t\t |");
+    printf("\n|\t President Name : MD Tanvir Hasan Molla\t\t |");
+    printf("\n|\t Total Executive Member : 7 \t\t\t |");
+    printf("\n|\t Total General Member : 23 \t\t\t |");
+    printf("\n|\t Previous Program : 3rd Industrial Visit 2023. \t |");
+    printf("\n|\t UpComing Program : Coming Soon.\t\t |");
+    printf("\n|\t\t\t\t\t\t\t |");
+    printf("\n----------------------------------------------------------");
 
     printf("\n\n\t Enter 0 to go back:  ");
     scanf("%d",&user_x);
@@ -268,17 +282,20 @@ void txt(){
 //-------CUL SECTION---------//
 void cul(){
     int user_x;
-    printf("\n\n-----------------------------------------------------");
+    printf("\n\n----------------------------------------------------------");
     printf("\n|");
-    printf("\t\tWELCOME CULTURAL CLUB");
-    printf("\t\t    |\n");
-    printf("-----------------------------------------------------");
-    printf("\n\n\t Club Name : Cultural Clube.");
-    printf("\n\t President Name : Ibrahim");
-    printf("\n\t Total Executive Member : 3 ");
-    printf("\n\t Total General Member : 20 ");
-    printf("\n\t Previous Program : Curoy-vati Episod 3");
-    printf("\n\t UpComing Program : Curoy-vati Episod 4");
+    printf("\t\tWELCOME TO CULTURAL CLUB");
+    printf("\t\t |\n");
+    printf("----------------------------------------------------------");
+    printf("\n|\t\t\t\t\t\t\t |");
+    printf("\n|\t Club Name : Cultural Clube. \t\t\t |");
+    printf("\n|\t President Name : MD Ibrahim\t\t\t |");
+    printf("\n|\t Total Executive Member : 3 \t\t\t |");
+    printf("\n|\t Total General Member : 20 \t\t\t |");
+    printf("\n|\t Previous Program : Talent Hunt. \t\t |");
+    printf("\n|\t UpComing Program : Curoy-vati Episod 4.\t |");
+    printf("\n|\t\t\t\t\t\t\t |");
+    printf("\n----------------------------------------------------------");
 
     printf("\n\n\t Enter 0 to go back:  ");
     scanf("%d",&user_x);
@@ -333,7 +350,7 @@ void join(){
         printf("\n\n\t Join successfully.\n\n");
         fclose(user_join);
         
-        printf("\n\n\t 00. Back \n");
+        printf("\n\t 00. Back \n");
         printf("\n\t [>_<] Enter: ");
         scanf("%d",&user_x);
 
