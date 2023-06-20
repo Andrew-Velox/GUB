@@ -25,8 +25,9 @@ int main(){
     gets(usr_nm);*/
 
     while (1)
-    {   
-        printf("\n -------------------------------------------------------\t\n");
+    {
+        //printf("\n -------------------------------------------------------\t\n");
+        printf("\n _______________________________________________________\t\n");
         printf("|           _____    _____   __  __    _____   \t\t|\n");
         printf("|          / ____|  / ____| |  \\/  |  / ____|  \t\t|\n");
         printf("|         | |  __  | |      | \\  / | | (___    \t\t|\n");
@@ -45,11 +46,10 @@ int main(){
         printf("|\t\t 1. ADMIN PANEL. \t\t\t|\n");
         printf("|\t\t 2. USER PANEL. \t\t\t|\n");
         printf("|\t\t 3. EXIT. \t\t\t\t|\n");
-        printf("|\t\t\t\t\t\t\t|\n");
-        printf("|-------------------------------------------------------|");
+        printf("|_______________________________________________________|\n");
         printf("\n\t\t [>_<] Enter: ");
         scanf("%d",&user_in);
-    
+
         if(user_in==1){
             admin();
         }
@@ -218,7 +218,7 @@ void cse(){
     else{
         printf("\n\n\tGOOD BYE. [>_<]\n\n");
         exit(0);
-    }  
+    }
 }
 
 //-------EEE SECTION---------//
@@ -351,7 +351,7 @@ void join(){
 
         printf("\n\n\t\t Join successfully.\n\n");
         fclose(user_join);
-        
+
         printf("----------------------------------------------------------\n");
         printf("|\t\t 01. Add Another Student. \t\t |\n");
         printf("|\t\t 00. Back. \t\t\t\t |");
