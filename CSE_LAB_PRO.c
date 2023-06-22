@@ -139,12 +139,13 @@ void admin(){
 //-------User Panel---------//
 void user(){
     int user_x,xx;
-    printf("\n\n----------------------------------------------------------");
-    printf("\n|");-
-    printf("\t  Select Which Club You Want To Know About");
-    printf("\t |");
-    printf("\n----------------------------------------------------------\n");
-    printf("|\t\t\t\t\t\t\t |");
+    printf("\n----------------------------------------------------------");
+    printf("\n|");
+    printf("\t\tWELCOME TO USER PANEL");
+    printf("\t\t\t |\n");
+    printf("----------------------------------------------------------");
+    printf("\n<----------------Select Your Option---------------------->");
+    printf("\n|\t\t\t\t\t\t\t |");
     printf("\n|\t\t 1. Computer Club \t\t\t |");
     printf("\n|\t\t 2. EEE Club \t\t\t\t |");
     printf("\n|\t\t 3. Textile Club \t\t\t |");
@@ -153,7 +154,6 @@ void user(){
     printf("\n|\t\t 6. Back. \t\t\t\t |");
     printf("\n|\t\t\t\t\t\t\t |");
     printf("\n----------------------------------------------------------\n");
-
     printf("\t\t[>_<] Enter: ");
     scanf("%d",&user_x);
     switch(user_x){
